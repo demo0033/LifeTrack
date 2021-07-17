@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./src/css/style.scss" />
+    <title>LifeTrack</title>
+  </head>
+  <body>
+    <header>
+        <div class="header">
+            <h1>New Dataset</h1>
+        </div>
+    </header>
+    <main>
+        <div class="dataset-form">
+            <form id="newDatasetForm" onsubmit="return false">
+                <label for="title">Dataset name:</label>
+                <input type="text" id="title" placeholder="Title" title="Dataset name" maxlength=50><br>
+                <div id=attributeList></div>
+                <button id="newField" title="New field">New Attribute</button>
+                <button id="deleteField" title="Remove field" disabled>Delete Attribute</button><br>
+                <div id="blankErr" class="err" style="visibility: hidden; color: red;">Names must not be blank!</div>
+                <input id="submit" type="submit" value="Create Dataset" title="Submit form">
+                <input id="cancel" type="button" value="Cancel" title="Cancel">
+            </form>
+        </div>
+    </main>
+    <script src="./src/js/newDataset.js"></script>
+  </body>
+</html>
