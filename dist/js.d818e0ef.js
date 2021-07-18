@@ -140,6 +140,7 @@ function loadDataset(set) {
   newDiv.innerHTML = data['name'];
   var newLink = document.createElement("a");
   newLink.setAttribute("href", "./src/html/ViewData.html");
+  newLink.setAttribute("target", "_self");
   newLink.appendChild(newDiv);
   dataSetDiv.appendChild(newLink);
 }
@@ -171,7 +172,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61260" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59378" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
