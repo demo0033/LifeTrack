@@ -21,7 +21,11 @@ function loadDataset(set) {
     newDiv.innerHTML = data['name'];
     var newLink = document.createElement("a");
     newLink.setAttribute("href","./src/html/ViewData.html");
-    newLink.setAttribute("target","_self");
+    newLink.setAttribute("onClick","addSelection("+setCount+")");
     newLink.appendChild(newDiv);
     dataSetDiv.appendChild(newLink);
+}
+
+function addSelection(numClicked) {
+    localStorage.setItem('view',numClicked);
 }

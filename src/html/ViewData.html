@@ -8,6 +8,30 @@
     <title>LifeTrack</title>
   </head>
   <body>
-    This is page
+    <header>
+      <div class="header">
+          <h1 id="datasetName">Dataset Name</h1>
+      </div>
+    </header>
+    <main>
+      <div>
+        <b>Number of datapoints:</b>
+        <div id=numDatapoints></div>
+      </div>
+      <br>
+      <br>
+      <b>Attributes:</b>
+      <br>
+      <div id=attributeList></div>
+      <br>
+      <div id="newPoint">
+
+      </div>
+      <div id="blankErr" class="err" style="visibility: hidden; color: red;">Datapoints can't be empty!</div>
+      <button id="newPointButton">Add datapoint</button>
+      <br><br>
+      <button id="backButton">Back</button>
+    </main>
+    <script type="text/javascript" src="../js/viewData.js"></script>
   </body>
 </html>

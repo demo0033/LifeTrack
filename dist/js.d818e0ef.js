@@ -140,9 +140,13 @@ function loadDataset(set) {
   newDiv.innerHTML = data['name'];
   var newLink = document.createElement("a");
   newLink.setAttribute("href", "./src/html/ViewData.html");
-  newLink.setAttribute("target", "_self");
+  newLink.setAttribute("onClick", "addSelection(" + setCount + ")");
   newLink.appendChild(newDiv);
   dataSetDiv.appendChild(newLink);
+}
+
+function addSelection(numClicked) {
+  localStorage.setItem('view', numClicked);
 }
 },{}],"../../../../../Users/ericd/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -172,7 +176,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59378" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57823" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
