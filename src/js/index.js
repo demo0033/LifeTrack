@@ -19,5 +19,8 @@ function loadDataset(set) {
     newDiv.setAttribute("id", "set"+setCount);
     newDiv.setAttribute("class", "dataset");
     newDiv.innerHTML = data['name'];
-    dataSetDiv.appendChild(newDiv);
+    var newLink = document.createElement("a");
+    newLink.setAttribute("href","/src/html/ViewData.html");
+    newLink.appendChild(newDiv);
+    dataSetDiv.appendChild(newLink);
 }
