@@ -69,7 +69,7 @@ function createDataset() {
     setCount++;
     localStorage.setItem('setCount', setCount);
     localStorage.setItem("set"+setCount, JSON.stringify(dataset));
-    window.location = "/index.html";
+    window.location = "../../index.html";
 }
 
 addField();
@@ -95,5 +95,5 @@ var btn = document
 var btn = document
     .getElementById("cancel")
     .addEventListener("click", function () {
-        window.location = "/index.html";
+        window.location = "../../index.html";
     });

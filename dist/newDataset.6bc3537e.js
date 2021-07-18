@@ -191,7 +191,7 @@ function createDataset() {
   setCount++;
   localStorage.setItem('setCount', setCount);
   localStorage.setItem("set" + setCount, JSON.stringify(dataset));
-  window.location = "/index.html";
+  window.location = "../../index.html";
 }
 
 addField();
@@ -205,7 +205,7 @@ var btn = document.getElementById("submit").addEventListener("click", function (
   createDataset();
 });
 var btn = document.getElementById("cancel").addEventListener("click", function () {
-  window.location = "/index.html";
+  window.location = "../../index.html";
 });
 },{}],"../../../../../Users/ericd/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

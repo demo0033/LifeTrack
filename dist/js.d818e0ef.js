@@ -139,7 +139,7 @@ function loadDataset(set) {
   newDiv.setAttribute("class", "dataset");
   newDiv.innerHTML = data['name'];
   var newLink = document.createElement("a");
-  newLink.setAttribute("href", "/src/html/ViewData.html");
+  newLink.setAttribute("href", "./src/html/ViewData.html");
   newLink.appendChild(newDiv);
   dataSetDiv.appendChild(newLink);
 }
